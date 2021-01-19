@@ -1,0 +1,150 @@
+/* font-family: 'Life Savers', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url(./images/sunrise-beach.jpg) no-repeat center;
+}
+
+.card-wrapper {
+    height: 600px;
+    width: 450px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url(./images/sunrise-beach.jpg) no-repeat center;
+    border-radius: 10px;
+    transition: box-shadow 1s;
+}
+
+.card-wrapper:hover {
+    box-shadow: 0 0 30px #000;
+}
+
+.card-wrapper:hover .card {
+    top: 0;
+}
+
+.card {
+    position: absolute;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: top .8s 1s;
+}
+
+.card-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 25px;
+    border: 2px dotted #fff;
+    padding: 10px;
+    box-shadow: 0 0 30px #000;
+}
+
+.card-heading {
+    font-family: 'Life Savers', cursive;
+    font-size: 26px;
+    margin-top: 10px;
+    text-align: center;
+    background: rgb(238, 174, 202);
+    background: linear-gradient(190deg, rgba(238, 174, 202, 1) 50%, rgba(148, 187, 233, 1) 50%);
+    color: white;
+    transform: perspective(800px) skewX(-20deg) rotateY(40deg);
+    border: 2px dotted #fff;
+    transition-duration: 2s;
+}
+
+.card-heading:hover {
+    transform: rotate(360deg);
+}
+
+.card-paragraph {
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    text-align: justify;
+    color: white;
+    display: flex;
+    font-size: 16px;
+}
+
+.card-paragraph i {
+    font-style: italic;
+}
+
+.card-paragraph i:first-child {
+    left: 10px;
+    padding-right: 10px;
+}
+
+.card-paragraph i:last-child {
+    bottom: -5px;
+    margin-left: 10px;
+    align-self: flex-end;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.card-icon-link {
+    text-decoration: none;
+    height: 35px;
+    width: 35px;
+}
+
+.card-icon {
+    font-size: 20px;
+    color: #fff;
+    border: 2px dotted #fff;
+    padding: 5px;
+    transition: .5s ease;
+    border-radius: 50%;
+}
+
+.card-icon:hover {
+    box-shadow: 0 0 10px #000;
+    transform: scale(1.5);
+    background: rgb(238, 174, 202);
+    background: linear-gradient(200deg, rgba(238, 174, 202, 1) 50%, rgba(148, 187, 233, 1) 50%);
+}
+
+.card-btn {
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    border: 2px dotted #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+    transition: .8s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.card-btn:hover {
+    box-shadow: 0 0 10px #000;
+    transform: scale(1.3);
+    background: rgb(238, 174, 202);
+    background: linear-gradient(190deg, rgba(238, 174, 202, 1) 50%, rgba(148, 187, 233, 1) 50%);
+}
