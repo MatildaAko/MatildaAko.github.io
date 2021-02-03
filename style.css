@@ -6,6 +6,18 @@ font-family: 'Open Sans', sans-serif; */
     padding: 0;
 }
 
+#birds {
+    width: 200px;
+    position: absolute;
+    left: -185px;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+img {
+    width: 100%;
+}
+
 .container {
     font-family: 'Open Sans', sans-serif;
     height: 100vh;
@@ -74,6 +86,7 @@ font-family: 'Open Sans', sans-serif; */
 
 .card-heading:hover {
     transform: rotate(360deg);
+    text-transform: uppercase;
 }
 
 .card-paragraph {
